@@ -1,0 +1,27 @@
+/*animal pic*/
+.pic
+{
+    width: 330px;
+    height: 200px;
+    background-color: coral;
+    border-radius: 30px;
+    border-style: groove;
+}
+.pic:hover
+{
+    transition: transform 1.5s ease;
+    transform: scale(-1,1);
+}
+
+/*AH - gif*/
+.HUH:hover
+{
+    transition: transform 0.7s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*Baton-Cat*/
+.Baton-Cat
+{
+    transform:rotate(90deg);
+}
