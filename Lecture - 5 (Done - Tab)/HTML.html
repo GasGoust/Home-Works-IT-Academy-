@@ -1,0 +1,71 @@
+<!-- Table -->
+<!-- 
+<table>: Создает таблицу.
+<tr>: Каждая строка таблицы. (Ячейка)
+<th>: Заголовки для столбцов "Имя" и "Возраст". (Слово жирное)
+<td>: Ячейки с данными для каждого человека. (Обычное слово)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table  rules='all'  
+        style="border: 2px;
+              border-style: solid;
+              border-color: black;">
+    <!--Название/Адрес-->
+    <colgroup>
+    <col>
+    <col>
+    </colgroup>
+    <!--Тел/Сайт-->
+    <colgroup style="background-color: yellow;">
+    <col>
+    <col>
+    </colgroup>
+    <col style="background-color: aqua;">
+    <!--Шапка-->
+    <thead>
+        <tr>
+            <th style="background-color: #d0a0fd;">Название</th>
+            <th style="background-color: #d0a0fd;">Адрес</th>
+            <th style="background-color: coral;">Телефон</th>
+            <th style="background-color: coral;">Сайт</th>
+            <th style="background-color: cadetblue;">Описание</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>Государственный Эрмитаж (Зимний дворец)</td>
+        <td>Дворцовая пл., д. 2</td>
+        <td>+7 (812) 710 9079</td>
+        <td>www.hermitagemuseum.org</td>
+        <td>Один из крупнейших художественных и культурно-исторических музеев мира.</td>
+    </tr>
+    <tr>
+        <td>Петропавловская крепость</td>
+        <td>Петропавловская крепость, д. 3</td>
+        <td>+7 (812) 230 6431</td>
+        <td>www.spbmuseum.ru</td>
+        <td>Он является усыпальницей дома Романовых: здесь похоронены все русские цари от Петра I до Николая II.</td>
+    </tr>
+    <tr>
+        <td>Русский музей (Михайловский дворец)</td>
+        <td>Инженерная ул., д. 4</td>
+        <td rowspan="2">+7 (812) 595 4248</td>
+        <td rowspan="2">www.rusmuseum.ru</td>
+        <td>Русский музей – крупнейший в мире музей русского искусства</td>
+    </tr>
+    <tr>
+        <td>Летний сад</td>
+        <td>Летний сад, лит. А</td>
+        <!-- <td>+7 (812) 595 4248</td>
+        <td>www.rusmuseum.ru</td> -->
+        <td>Летний сад был заложен в 1704 году по указу Петра I и является первым памятником ландшафтного искусства в Санкт-Петербурге.</td>
+    </tr>
+</table>    
+</body>
+</html>
