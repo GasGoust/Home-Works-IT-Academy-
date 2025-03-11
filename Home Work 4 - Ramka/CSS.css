@@ -1,0 +1,12 @@
+.container{
+            border: 10px solid rgb(241, 126, 126);
+            width: 70%;
+            height: 70%;
+            padding: 15px;
+            top: 70%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            /* border-image:url(Pic/Ramka.png) 10% round; */
+            border-image:url(Pic/New_Ramka.png) 10% round;
+        }
