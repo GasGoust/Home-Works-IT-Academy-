@@ -1,0 +1,165 @@
+<!--Home Work 3 - Harry Potter-->
+<!DOCTYPE html>
+<html lang="en", lang="rus">
+<head>
+    <title>Harry Potter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS.css">
+    <link rel="stylesheet" href="/JS.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap"
+    rel="stylesheet">
+    <!--ICO website-->
+    <link rel="icon" href="Pic/favicon.png" type="image/png">
+
+    <!-- ●	Установить размер шрифта для первого заголовка относительно окна браузера -->
+    <!-- <style> h3{font-size: 5em;} </style> -->
+    <!-- <style> h3{font-size: clamp(24px, 5vw, 64px);} </style> -->
+    <!-- Исправлено на: - (по ширине окна браузера VMAX) источник: Методичка HTML CSS 29 стр-->
+    <style>h3{ font-size: 5vmax;} </style>
+    <!-- ●	Установить размер шрифта для абзацев с текстом в 1.2em -->
+    <!-- <style>p{font-size: clamp(25px, 1vw, 64px);}</style>  -->
+    <!-- Исправлено на: - (по ширине окна браузера) -->
+    <style> p{font-size: 1.2em;} </style>
+    
+</head>
+<body>
+    <!-- Первая страница -->
+    <div style="display: block; align-items: center; text-align: center;">
+        <!--Через внешний шрифт-->
+        <h3 style="font-family: Oswald;">Серия романов о Гарри Поттере</h3>
+        <img src="Pic/potter-all.jpg" alt="All-Books" style="width: 450px; height: 300px;">
+    </div>
+    <div style="margin: auto; display: block; width: 800px; text-align: justify; text-indent: 1cm;">
+        <!--Cвободный шрифт: Pacifico-->
+        <p style="font-family: Pacifico;">
+            <!--Самая - Красным цветом-->
+            <span style="color: brown; font-size: 30px; font-weight: 600;">
+                Самая 
+            </span>
+                знаменитая сага новейшего времени разошлась 
+                рекордным тиражом -
+            <!--400 млн экз на 68 яз - Подчеркнутые-->
+            <!--400 и 68 - Жирные-->     
+            <span style="text-decoration: underline;">более <strong>400</strong>
+                миллионов экземпляров на <strong>68</strong> языках</span>
+                (включая эсперанто, древнегреческий и латынь). 
+                Книги Роулинг сумели оторвать детей и взрослых от экранов 
+                компьютеров и стали мощнейшим импульсом для интереса к чтению 
+                в современную эпоху.
+        </p>    
+    </div>
+    <hr style="border-style: groove;" id="top">
+    <!--ссылки на книги-->
+    <div style="margin: auto; width: 800px; display: flex; justify-content: flex-start; height: 70px;">
+        <li style="list-style-type: none; line-height: 0px; text-transform: uppercase; font-style: italic;">
+            <ul><a href="#book1">читать первую книгу</a></ul>
+            <ul><a href="#book2">читать вторую книгу</a></ul>
+            <ul><a href="#book3">читать третью книгу</a></ul>
+        </li>
+    </div>
+    <!--Гарри Поттер и филосовский камень (book1)-->
+    <!--Иправил вместо width: 500 стоит 800-->
+    <div id="book1" style="margin: auto; width: 800px; display: block;">
+        <p style="text-indent: 1cm; text-align: justify; font-family: Pacifico;"> <!--Cвободный шрифт: Pacifico-->
+            <span style="color: brown;
+                font-size: 30px; font-weight: 600;"> Ж</span>изнь
+            десятилетнего Гарри Поттера 
+            нельзя назвать сладкой: его родители умерли, едва ему исполнился 
+            год, а от дяди и тётки, взявших сироту на воспитание, достаются 
+            лишь тычки да подзатыльники. Но в одиннадцатый день рождения 
+            Гарри всё меняется. Странный гость, неожиданно появившийся на пороге, 
+            приносит письмо, из которого мальчик узнаёт, что на самом деле он 
+            чистокровный волшебник и принят в Хогвартс — школу магии. А уже через 
+            пару недель Гарри будет мчаться в поезде Хогвартс-экспресс навстречу 
+            новой жизни, где его ждут невероятные приключения, верные друзья и 
+            самое главное — ключ к разгадке тайны смерти его родителей.
+        </p>
+        <img src="Pic/potter -1.jpg" alt="Гарри Поттер и филосовкий камень"
+            style="margin-left: 125px; margin-right: 125px; width: 250px;"> <!--Убрал height-->
+    </div>
+    <!--TOP Button-->
+    <div style="margin: auto; width: 540px; display: block;">
+        <a href="#top"><img src="Pic/top.png"
+            alt="top"
+            style=" position: absolute;
+                    margin-top: -150px;
+                    margin-right: 200px;
+                    margin-left: 450px;
+                    border-radius: 30px;
+                    width: 50px;
+                    height: 50px;">
+        </a>
+    </div>
+    <!--Гарри Поттер и тайная комната (book2)-->
+    <!--Иправил вместо width: 500 стоит 800-->
+    <div id="book2" style="margin: auto; width: 800px; display: block;">
+        <p style="text-indent: 1cm; text-align: justify; font-family: Pacifico;"> <!--Cвободный шрифт: Pacifico-->
+            <span style="color: brown;
+                font-size: 30px; font-weight: 600;">Э</span>то 
+            вторая книга о приключениях Гарри Поттера. Он снова 
+            вступает в отчаянную схватку со злом. На этот раз враг 
+            его так силен, что надежды на победу почти нет. В Школе 
+            чародейства и волшебства «Хогвартс» происходят тревожные 
+            события. Кто-то нападает на учеников школы, и преподаватели 
+            подозревают, что это таинственное чудовище, которое скрывается 
+            в легендарной Тайной комнате. Гарри Поттер и его друзья разгадывают 
+            загадку Тайной комнаты, и теперь Гарри снова предстоит сразиться 
+            с лордом Волан-де-Мортом. Сумеет ли он победить на этот раз?
+        </p>
+    </div>
+    <!--Width 800 было 500, Display: Block, был Flex, justify - Убрал-->
+    <div style="display: block; width: 800px; margin: auto;">
+        <img src="Pic/potter -2.jpg" alt="Гарри Поттер и тайная комната"
+        style="width: 250px; margin-left: 125px; margin-right: 125px;"> <!--Убрал height-->
+    </div>
+    <!--TOP Button-->
+    <div style="margin: auto; width: 540px; display: block;">
+        <a href="#top"><img src="Pic/top.png"
+            alt="top"
+            style=" position: absolute;
+                    margin-top: -150px;
+                    margin-right: 200px;
+                    margin-left: 450px;
+                    border-radius: 30px;
+                    width: 50px;
+                    height: 50px;">
+        </a>
+    </div>
+    <!--Гарри Поттер и узник Азкабана (book3)-->
+    <!--Иправил вместо width: 500 стоит 800-->
+    <div id="book3" style="display: flex; justify-content: center; width: 800px; margin: auto;">
+        <p style="text-indent: 1cm; text-align: justify; font-family: Pacifico;"> <!--Cвободный шрифт: Pacifico-->
+            <span style="color: brown; font-size: 30px; font-weight: 600;">Д</span>венадцать
+            долгих лет в Азкабане - мрачной тюрьме 
+            волшебного мира - содержался всем известный узник по имени 
+            Сириус Блэк. Его обвиняли в убийстве тринадцати человек и 
+            считали наследником лорда Волан-де Морта. И вот он бежал, и 
+            из оставленных им следов ясно, что на этот раз убийца поставил 
+            целью избавиться от Гарри Поттера. Теперь Гарри в опасности, 
+            даже за стенами своей волшебной школы, даже среди друзей - потому 
+            что среди них есть предатель, готовый открыть убийце путь в Хогвартс.
+        </p>
+    </div>
+    <!--Width 800 было 500, Display: Block, был Flex, justify - Убрал-->
+    <div style="display: block; width: 800px; margin: auto;">
+        <img src="Pic/potter -3.jpg" alt="Гарри Поттер и узник Азкабана"
+        style="width: 250px; margin-left: 125px; margin-right: 125px;"> <!--Убрал height-->
+    </div>
+    <!--TOP Button-->
+    <div style="margin: auto; width: 540px; display: block;">
+        <a href="#top"><img src="Pic/top.png"
+            alt="top"
+            style=" position: absolute;
+                    margin-top: -150px;
+                    margin-right: 200px;
+                    margin-left: 450px;
+                    border-radius: 30px;
+                    width: 50px;
+                    height: 50px;">
+        </a>
+    </div>
+</body>
+</html>
