@@ -1,0 +1,29 @@
+table
+{
+  width: 100%;
+}
+tr, th, td
+{
+  text-align: center;
+}
+.color0
+{
+  background-color: #867192;
+  color: white;
+}
+.color1
+{
+  background-color: #f7f7f7;
+}
+.color2
+{
+  background-color: #aaaaaa;
+}
+.color1:hover
+{
+  background-color: #e4c022;
+}
+.color2:hover
+{
+  background-color: #990000;
+}
