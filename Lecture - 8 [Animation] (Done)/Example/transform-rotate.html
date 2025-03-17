@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    .box {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 1s ease-in;
+    }
+    
+    .rotate:hover {
+        transform: rotate(40deg);
+    }
+
+    .rotateY:hover {
+        transform: rotateY(40deg);
+    }
+
+    .rotateX:hover {
+        transform: rotateX(40deg);
+    }
+
+    .rotateZ:hover {
+        transform:  rotateZ(40deg);
+    }
+
+    .rotate3D:hover {
+        transform:  rotate3D(30, 90, 0, 40deg);
+    }
+
+    .rotate3D-perspective:hover {
+        transform: perspective(500px) rotate3d(30, 90, 0, 40deg);
+    }
+</style>
+</head>
+<body>
+
+    <div style="perspective: 1000px;">
+        <h1>The rotate() Method</h1>
+
+        <div class="box rotate">
+            rotate
+        </div>
+        <div class="box rotateX">
+            rotate X
+        </div>
+        <div class="box rotateY">
+            rotate Y
+        </div>
+        <div class="box rotateZ">
+            rotate Z
+        </div>
+        <div class="box rotate3D">
+            rotate X,Y,Z
+        </div>
+        <div class="box rotate3D-perspective">
+            rotate 3d perspective
+        </div>
+    </div>
+
+</body>
+</html>

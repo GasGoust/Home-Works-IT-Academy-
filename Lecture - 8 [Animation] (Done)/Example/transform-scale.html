@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    .box {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 1s ease-in;
+    }
+
+    .scaleY:hover {
+        transform: scaleY(1.5);
+    }
+
+    .scaleY-negative:hover {
+        transform: scaleY(-1);
+    }
+    .scaleX:hover {
+        transform: scaleX(2);
+    }
+
+    .scale:hover {
+        transform: scale(.6, .6);
+    }
+
+    .scale3D:hover {
+        transform: scale3D(.6, .6, 3);
+    }
+</style>
+</head>
+<body>
+
+    <div style="perspective: 1000px;">
+        <h1>The scale() Method</h1>
+
+        <div class="box scaleX">
+            scale X
+        </div>
+        <div class="box scaleY">
+            scale Y
+        </div>
+        <div class="box scaleY-negative">
+            scale Y negative
+        </div>
+        <div class="box scale">
+            scale X, Y
+        </div>
+        <div class="box scale3D">
+            scale X,Y,Z
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    .translateY {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 1s ease-in;
+    }
+
+    .translateY:hover {
+        transform: translateY(100px);
+    }
+
+    .translateX {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 1s linear;
+    }
+
+    .translateX:hover {
+        transform: translateX(100px);
+    }
+    .translate {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 2s linear;
+    }
+
+    .translate:hover {
+        transform: translate(50px, 50px);
+    }
+
+    .translate3D {
+        width: 300px;
+        height: 100px;
+        margin: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transition: all 2s ease-out;
+    }
+
+    .translate3D:hover {
+        transform: translate3D(50px, 50px, 300px);
+    }
+</style>
+</head>
+<body>
+
+    <div style="perspective: 1000px;">
+        <h1>The translate() Method</h1>
+        <p>The translate() method moves an element from its current position:</p>
+
+        <div class="translateX">
+            translateX
+        </div>
+        <div class="translateY">
+            translateY
+        </div>
+        <div class="translate">
+            translate X,Y
+        </div>
+        <div class="translate3D">
+            translate X,Y,Z
+        </div>
+    </div>
+
+</body>
+</html>

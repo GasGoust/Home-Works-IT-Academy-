@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .card {
+       display: inline-block;
+       border: 1px solid #ccc; /* Параметры рамки */
+       padding: 20px; /* Поля вокруг картинки */
+       margin: 30px; /* ОтступЫ */
+    }
+    img {
+     height: 350px;
+    }
+    /*1*/
+    .card.opacity img {
+      opacity: 0;
+      transition: opacity 1s ease-out; 
+    }
+    .card.opacity img:hover {
+      opacity: 1;  
+    }
+    /*2*/
+    .card.visibility img {
+      visibility: hidden;
+    }
+    .card.visibility {
+      transition: all 1s ease-out; 
+    }
+    .card.visibility:hover img {
+      visibility: visible;  
+    }
+    /*3*/
+    .card.translateX img
+    {
+      transition: all 1s linear;
+    }
+    .card.translateX img:hover {
+        transform: translateX(100px);
+    }
+    /*4*/
+    .card.scaleXY img
+    {
+      transition: all 2s ease-in;
+    }
+    .card.scaleXY img:hover {
+        transform: scale(.6, .6);
+    }
+    /*5*/
+    .card.rotate img
+    {
+      transition: all 1s ease-in;
+    }
+    .card.rotate img:hover
+    {
+      transform: rotate(40deg);
+    }
+    /*6*/
+    .card.skewX img
+    {
+      transition: all 1s ease-in;
+    }
+    .card.card.skewX img:hover
+    {
+      transform: skew(40deg, 20deg);
+    }
+    /*7*/
+    .card.perspective img
+    {
+      transition: all 2s ease-in;
+    }
+    .card.perspective img:hover
+    {
+      transform: perspective(400px) rotateX(25deg);
+    }
+  </style>
+  <div class="card opacity"><img src="1.jpg" alt="">          Opacity</div>
+  <div class="card visibility"><img src="2.jpg" alt="">         Visibility</div>
+  <div class="card translateX"><img src="3.jpg" alt="">         TranslateX</div>
+  <div class="card scaleXY"><img src="4.jpg" alt="">          ScaleXY</div>
+  <div class="card rotate"><img src="1.jpg" alt="">         Rotate</div>
+  <div class="card skewX"><img src="2.jpg" alt="">          SkewX</div>
+  <div class="card perspective"><img src="3.jpg" alt="">          Perspective</div>
+
+</body>
+</html>
