@@ -21,6 +21,7 @@ header {
     display: inline-block;
     width: 100%;
     text-align: center;
+    transform: rotateY(-180deg);
 }
 
 .star {
@@ -144,11 +145,6 @@ div p:nth-last-child(-n+3):hover{
 .star:hover ~ .star img,
 .star:hover img {
     content: url('DMD_COL.png'); 
-}
-.star:hover ~ .star img,
-.star:hover img:hover {
-    content: url('DMD_COL.png');
-	transform:rotate(0.2s) ease; 
 }
 
 /* .star:hover
