@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Для 10 кубиков */
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 400px;
+}
+
+/* 1 кубик */
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+
+/* Черное поле */
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+}
+
+/* Белое поле */
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
