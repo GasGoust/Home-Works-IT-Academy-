@@ -1,0 +1,19 @@
+body
+{
+}
+.stars-group {
+    display: inline-block;
+    margin-top: 100px;
+    width: 70%;
+    transform: rotateY(180deg);
+}
+
+.star
+{
+    display: inline-block;
+}
+
+.star:hover ~ .star img,
+.star:hover img {
+    content: url('DMD_COL.png'); 
+}
