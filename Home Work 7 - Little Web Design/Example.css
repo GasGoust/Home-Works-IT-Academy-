@@ -67,7 +67,7 @@ nav ul li a:focus
 }
 
 #body {
-    width: 100%;
+    width: 90%;/*было 100%*/
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -129,8 +129,8 @@ div p:nth-last-child(-n+3)
 	border-radius: 20px;
 	text-align: center;
 	align-items: center;
-	height: 30px;
-	width: 350px;
+	height: 3vmax; /*Тут были пиксили =)*/
+	width: 25vmax;/*Тут были пиксили =)*/
 	margin-left: auto;
 	margin-right: auto;
 }
