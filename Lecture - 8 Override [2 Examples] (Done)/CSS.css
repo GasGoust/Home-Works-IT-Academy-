@@ -1,0 +1,76 @@
+body p, h3
+{
+    margin: 0;
+}
+
+    .container.main,
+    .container.additional {
+      width: 530px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 8px;
+      /*Фоновый цвет*/
+      background-color: #d8d0ac;
+    }
+    .container.header {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .label {
+      font-size: 1.2em;
+      color: #434343;
+    }
+    .container .form .label + .input {
+      margin-top: 10px;
+    }
+    .container .form .input + .label {
+      margin-top: 20px;
+    }
+
+    .container .form .input {
+      border: 1px solid #434343;
+      border-radius: 4px;
+      width: 200px;
+      height: 40px;
+      background-color: #fff;
+    }
+
+    .container .form .photo {
+      height: 100px;
+      border: 2px dashed #434343;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .container .form .button {
+      padding: 10px 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-top: 10px;
+      background-color: #434343;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    /* Новые стили для переопределения */
+    .container.main,
+    .container.additional {
+      background-color:#dfd6af; /*transparent*/
+      border: none;
+    }
+
+    .container .form .label {
+      font-size: 0.6em;
+      margin-top: 20px;
+    }
+
+    .container .form .input {
+      font-size: 0.6em;
+      background-color: #e8e8e8;
+    }
+
+    .container .form .button {
+      background-color: rgb(255, 179, 0);
+      color: black;
+    }
