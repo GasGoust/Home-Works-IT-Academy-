@@ -125,14 +125,12 @@ h2
 div p:nth-last-child(-n+3)
 {
 	display: block;
-	background-color: #edeedb;
+	background-color: #dbeaee;
 	border-radius: 20px;
-	text-align: center;
-	align-items: center;
-	height: 3vmax; /*Тут были пиксили =)*/
 	width: 25vmax;/*Тут были пиксили =)*/
 	margin-left: auto;
 	margin-right: auto;
+    padding: 10px 0;
 }
 div p:nth-last-child(-n+3):hover{
 	font-weight: 900;
