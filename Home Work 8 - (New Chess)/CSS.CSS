@@ -1,0 +1,285 @@
+body
+{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+table{
+    width: 100%;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+    background-color: rgb(180, 168, 129);
+}
+td
+{
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+tr td:first-child
+{
+    width: 10px;
+    height: 10px;
+}
+tr td:last-child
+{
+    width: 10px;
+    height: 10px;
+}
+
+                /* 1 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(1) td:nth-child(1)
+{}
+                /* 2 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(2) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(2) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(2) td:nth-child(even)
+{
+    color: black;
+    background-color: white;
+}
+table:nth-child(2) tr:nth-child(2) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(2) td:nth-child(odd)
+{
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(2) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 3 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(3) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(3) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(3) td:nth-child(even)
+{
+    color: white;
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(3) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(3) td:nth-child(odd)
+{
+    background-color: white;
+    color: black;
+}
+table:nth-child(2) tr:nth-child(3) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 4 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(4) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(4) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(4) td:nth-child(even)
+{
+    color: black;
+    background-color: white;
+}
+table:nth-child(2) tr:nth-child(4) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(4) td:nth-child(odd)
+{
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(4) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 5 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(5) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(5) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(5) td:nth-child(even)
+{
+    color: white;
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(5) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(5) td:nth-child(odd)
+{
+    background-color: white;
+    color: black;
+}
+table:nth-child(2) tr:nth-child(5) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 6 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(6) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(6) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(6) td:nth-child(even)
+{
+    color: black;
+    background-color: white;
+}
+table:nth-child(2) tr:nth-child(6) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(6) td:nth-child(odd)
+{
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(6) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 7 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(7) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(7) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(7) td:nth-child(even)
+{
+    color: white;
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(7) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(7) td:nth-child(odd)
+{
+    background-color: white;
+    color: black;
+}
+table:nth-child(2) tr:nth-child(7) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /*8 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(8) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(8) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(8) td:nth-child(even)
+{
+    color: black;
+    background-color: white;
+}
+table:nth-child(2) tr:nth-child(8) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(8) td:nth-child(odd)
+{
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(8) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
+                /* 9 - Строка - Пример*/
+table:nth-child(2) tr:nth-child(9) td:nth-child(1)
+{
+    background-color: green;
+}
+table:nth-child(2) tr:nth-child(9) td:nth-child(10)
+{
+    background-color: green;
+}
+/* even - Четный счет */
+table:nth-child(2) tr:nth-child(9) td:nth-child(even)
+{
+    color: white;
+    background-color: black;
+}
+table:nth-child(2) tr:nth-child(9) td:nth-child(even):last-child
+{
+    background-color: green;
+    color: white;
+}
+/* odd - нечетный счет */
+table:nth-child(2) tr:nth-child(9) td:nth-child(odd)
+{
+    background-color: white;
+    color: black;
+}
+table:nth-child(2) tr:nth-child(9) td:nth-child(odd):first-child
+{
+    background-color: green;
+    color: white;
+}
