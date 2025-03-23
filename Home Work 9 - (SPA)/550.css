@@ -1,0 +1,16 @@
+@media screen and (max-width: 550px) {
+  .time, .price {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .time {
+    margin-bottom: 0;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+}

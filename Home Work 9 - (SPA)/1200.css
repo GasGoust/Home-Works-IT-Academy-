@@ -1,0 +1,14 @@
+@media screen and (max-width: 1200px) {
+  header {
+    background-image: none;
+    text-align: center;
+  }
+
+  header div {
+    margin: 20px 10px 0 10px;
+  }
+
+  header p {
+    padding: 20px 0 0 0;
+  }
+}
