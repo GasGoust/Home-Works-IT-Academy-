@@ -1,0 +1,32 @@
+
+
+/* body .name .birthDay .birthDay .date .info .history
+{
+    color: black;
+} */
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+    color:black
+}
+.birthDay {
+    color: green;
+    /* color: black; */
+}
+.date {
+    font-weight: bold;
+    color: red;
+    /* color: black; */
+}
+.info {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.history {
+    font-style: italic;
+    color: blue;
+    /* color: black; */
+}
