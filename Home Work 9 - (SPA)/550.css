@@ -1,6 +1,7 @@
 @media screen and (max-width: 550px) {
   .time, .price {
-    display: block;
+    box-sizing: border-box;
+    display: inline-block;
     width: 100%;
     margin: 10px 0;
     text-align: center;
