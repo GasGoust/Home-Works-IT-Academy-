@@ -12,15 +12,21 @@
   header div:not(:last-of-type) {
     margin-right: 0;
   }
-
+  .description
+  {
+    box-sizing: border-box;
+  }
   .description, .time, .price {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
+    display: contents;
+    width: 43%;
+    margin: 10px 20px;
     text-align: center;
+    align-items: center;
   }
 
   .time, .price {
+    display: inline-block;
+    box-sizing: border-box;
     background-color: #81aea52b;
     font-weight: bold;
     font-size: 20px;
