@@ -1,0 +1,15 @@
+.She {
+    width: 153px;
+    height: 192px;
+    background-size: cover;
+    animation: run 0.6s infinite;
+  }
+  
+  @keyframes run {
+    0% { background-image: url('1.png'); }
+    20% { background-image: url('2.png'); }
+    40% { background-image: url('3.png'); }
+    60% { background-image: url('4.png'); }
+    80% { background-image: url('5.png'); }
+    100% { background-image: url('6.png'); }
+  }
