@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px) {
+    .base
+    {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    .side
+    {
+        flex: 1 1 100%;
+        flex-direction: row;
+        gap: 20px;
+        margin: 20px;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .side
+    {
+        flex-wrap: wrap;
+    }
+    .side-itm
+    {
+        flex: 0 0 100%;
+    }
+    .side-itm:nth-child(1)
+    {
+        order: 1;
+    }
+    .side-itm:nth-child(2)
+    {
+        order: 2;
+    }
+}
