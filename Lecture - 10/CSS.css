@@ -1,0 +1,19 @@
+.row
+{
+    flex-wrap: wrap;
+    display: flex;
+}
+article {
+    height: 50vmax;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 0, 0.273);
+}
+
+@media (max-width: 500px) {
+    .col__article,
+    .col__aside {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 30vmax;
+    }
+}
