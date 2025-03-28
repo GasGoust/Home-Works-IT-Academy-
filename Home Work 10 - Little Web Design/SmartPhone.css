@@ -1,0 +1,43 @@
+/* SmartPhone.css */
+@media (max-width: 680px) {
+    /* Вертикальное расположение элементов */
+    .row,
+    .row_2,
+    .row_3,
+    .row_4 {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Полная ширина для текстовых блоков и изображений */
+    .article_1,
+    .aside_1,
+    .article_2,
+    .aside_2,
+    .article_3,
+    .aside_3,
+    .article_4,
+    .aside_4 {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    /* Уменьшение изображений для мобилок */
+    .row img,
+    .row_2 img,
+    .row_3 img,
+    .row_4 img {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+
+    /* Отключение hover-эффектов */
+    .row:hover,
+    .row_2:hover,
+    .row_3:hover,
+    .row_4:hover {
+        transform: none !important;
+    }
+}

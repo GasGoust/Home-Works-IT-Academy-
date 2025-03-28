@@ -1,0 +1,375 @@
+body {
+	width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #d2e7e9;
+    color: #464646;
+    border: 0;
+    font: inherit;
+	overflow-x: hidden;
+}
+
+header {
+    background-color: #dbeaee;
+    color: #dbeaee;
+    padding: 20px 0;
+    text-align: center;
+}
+.stars-group {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transform: rotateY(-180deg);
+}
+
+.star {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav
+{
+    display: block;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover
+{	
+	background: #dbeaee;
+	color: #425c63;
+	padding: 10px;
+}
+nav ul li a:focus
+{	
+	background: #dbeaee;
+	color: #030303;
+	padding: 10px;
+}
+
+#body {
+    width: 100%;/*было 100%*/
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.services {
+    display: inline-table;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2.5%;
+    text-align: center;
+}
+
+footer {
+	height: 5%;
+	width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+}
+footer p
+{
+	font-size: small;
+}
+
+h1
+{
+	text-align: center;
+	font-family: Bitter;
+	text-transform: uppercase;
+	font-size: large;
+}
+p
+{
+    font-size: 12px;
+	font-family:bitter;
+    color: black;
+}
+
+#body p {
+	align-items: center;
+	text-align: center;
+}
+h2
+ {
+	text-align: center;
+ }
+/*Колокольчик/Загрузка*/
+div .Pic:nth-last-child(-n+3)
+{
+	display: block;
+	background-color: #dbeaee;
+	border-radius: 20px;
+	width: 50vmax;/*Тут были пиксили =)*/
+	margin-left: auto;
+	margin-right: auto;
+    padding: 10px 0;
+}
+div .Pic:nth-last-child(-n+3):hover{
+	font-weight: 900;
+    color: #FFF;
+    background: #2874a6d7 ;
+    cursor: pointer;
+}
+.Pic
+{
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Колокольчик/Загрузка - Анимация*/
+.spinner
+{
+    width: 15px;
+    height: 15px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin { 
+    100% {
+        transform:rotate(360deg); 
+    } 
+}
+.bell
+{
+    width: 15px;
+    height: 15px;
+    animation: ring 4s .7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+@keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+  }
+/*Menu*/
+div .Menu:nth-last-child(-n+3)
+{
+	display: block;
+	background-color: #dbeaee;
+	border-radius: 20px;
+	width: 40vmax;/*Тут были пиксили =)*/
+	margin-left: auto;
+	margin-right: auto;
+    padding: 10px 0;
+}
+div .Menu:nth-last-child(-n+3):hover{
+	font-weight: 900;
+    color: #FFF;
+    background: #2874a6d7 ;
+    cursor: pointer;
+}
+
+.star:hover ~ .star img,
+.star:hover img {
+    content: url('Photo/DMD_COL.png'); 
+}
+
+/* .star:hover
+{
+	background-image: url('DMD_COL.png');
+	background-size: cover;
+	transition: 0.3s ease;
+} */
+/*footer*/
+.footertext
+{
+    color: #FFF;
+}
+                /*Второе Body (body_2)*/
+
+                        /*SECOND BODY*/
+.body_2
+{
+    background-color: white;
+    padding-bottom: 3%;
+}
+
+/* 1 */
+.We_Design_Experiences
+{
+    display: flex;
+    justify-content: center;
+}
+.row
+{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.article_1
+{
+    width: 35%;
+}
+.article_1 p
+{
+    text-align: center;
+}
+/* 2 */
+.Web_design
+{
+    display: flex;
+    justify-content: center;
+}
+.row_2
+{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.article_2
+{
+}
+.aside_2
+{
+    width: 35%;
+}
+.aside_2 p
+{
+    text-align: center;
+}
+/* 3 */
+.UI_UX
+{
+    display: flex;
+    justify-content: center;
+}
+.row_3
+{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.article_3
+{
+    width: 35%;
+}
+.article_3 p
+{
+    text-align: center;
+}
+/* 4 */
+.UI_UX
+{
+    display: flex;
+    justify-content: center;
+}
+.row_4
+{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.aside_4
+{
+    width: 35%;
+}
+.aside_4 p
+{
+    text-align: center;
+}
+
+                    /*Сужение страницы*/
+                        /*Для row_2*/
+@media (max-width: 923px) {
+    .row_2 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row_2 .article_2 {
+        order: 2; /* Картинка внизу */
+    }
+    .row_2 .aside_2 {
+        order: 1; /* Текст сверху */
+        margin-bottom: 20px;
+    }
+}
+
+                        /*Для row_4*/
+@media (max-width: 923px) {
+    .row_4 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row_4 .article_4 {
+        order: 2; /* Картинка внизу */
+    }
+    .row_4 .aside_4 {
+        order: 1; /* Текст сверху */
+        margin-bottom: 20px;
+    }
+}
+                /* Наведение (hover) */
+/* Анимация увеличения при наведении на блоки */
+.row,
+.row_2,
+.row_3,
+.row_4 {
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.row:hover,
+.row_2:hover,
+.row_3:hover,
+.row_4:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
