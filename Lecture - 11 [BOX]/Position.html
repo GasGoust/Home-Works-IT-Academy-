@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    .main {
+        width: 400px;
+        height: 400px;
+        position: relative; /* Родительский контейнер для абсолютного позиционирования */
+        }
+    .red, .blue, .yellow {
+        width: 100px;
+        height: 100px;
+        position: absolute; /* Абсолютное позиционирование */
+        }
+        .red {
+            top: 0;
+        left: 0;
+        }
+        .blue {
+        top: 0;
+        right: 0;
+        }
+        .yellow {
+        bottom: 0;
+        right: 0;
+        }
+    </style>
+<body>
+    <!-- Зелёный блок с относительным позиционированием -->
+<div class="main" style="background-color: green;">
+    <!-- Красный блок с абсолютным позиционированием -->
+    <div class="red" style="background-color: brown;"></div>
+    <!-- Синий блок с абсолютным позиционированием -->
+    <div class="blue" style="background-color: yellow;"></div>
+    <!-- Желтый блок с абсолютным позиционированием -->
+    <div class="yellow" style="background-color: blue;"></div>
+ </div>
+ 
+</body>
+</html>
