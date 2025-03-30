@@ -1,0 +1,20 @@
+/* Tablet.css */
+@media (max-width: 925px) {
+    /* Уменьшение изображений в 1.5 раза */
+    .row img, .row_2 img{
+        width: 400px !important;   /* 600px / 1.5 */
+        height: 200px !important;  /* 300px / 1.5 */
+    }
+
+    /* Расположение текста и изображения в ряд */
+    .row, .row_2{
+        flex-direction: row !important;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* Отключение hover-эффектов */
+    .row:hover, .row_2:hover{
+        transform: none !important;
+    }
+}
