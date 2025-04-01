@@ -1,0 +1,47 @@
+/*Tablet v2*/
+@media (min-width: 600px) and (max-width: 850px) {
+    .row {
+        max-width: 90%;
+        padding: 30px 15px !important;
+    }
+    
+    .temp1, .temp2 {
+        flex-direction: row !important;
+        gap: 25px !important;
+        align-items: center;
+    }
+    
+    .temp2 {
+        flex-direction: row-reverse !important;
+    }
+    
+    .temp1 .word, 
+    .temp2 .word {
+        width: 65% !important;
+        text-align: center !important;
+        padding-right: 30px !important;
+    }
+    
+    .temp1 img, 
+    .temp2 img {
+        width: 35% !important;
+        height: auto !important;
+        aspect-ratio: 3/2 !important;
+        min-width: 200px !important;
+    }
+    
+    .column > h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .temp1:hover, .temp2:hover
+    {
+        transform:none;
+    }
+    
+    .temp1,
+    .temp2 {
+        transition: none;
+    }
+}
