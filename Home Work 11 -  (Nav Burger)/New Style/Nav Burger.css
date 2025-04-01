@@ -8,7 +8,7 @@
     cursor: pointer;
     padding: 15px;
     position: absolute;
-    top: 170px;
+    top: 45px;
     right: 40px;
     z-index: 3;
     background-image: url(/Burger_Bar/bars-solid.svg);
@@ -26,6 +26,15 @@
 
 
 @media (max-width: 600px) {
+    .star img
+    {
+        width: 50px;
+    }
+    nav {
+        display: block;
+        background-color: #444;
+        padding: 11px 0 10px;
+    }
     nav ul {
         display: none;
         position: absolute;
