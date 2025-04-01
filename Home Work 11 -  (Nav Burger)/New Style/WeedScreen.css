@@ -1,0 +1,15 @@
+/*WEED SCREEN PC*/
+@media (max-width: 1200px) {
+    .row {
+        max-width: 90%;
+        padding: 30px 15px;
+    }
+    
+    .temp1, .temp2 {
+        gap: 30px;
+    }
+    
+    .word {
+        padding: 15px !important;
+    }
+}

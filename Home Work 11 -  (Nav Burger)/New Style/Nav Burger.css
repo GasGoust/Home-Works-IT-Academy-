@@ -1,0 +1,70 @@
+                    /* Burger Menu */
+.burger-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 170px;
+    right: 40px;
+    z-index: 3;
+    background-image: url(/Burger_Bar/bars-solid.svg);
+
+}
+
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #deb887;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #5f5f5f;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+    nav ul li a:hover {
+        background: #dbeaee;
+        color: #425c63;
+        padding: 0px 100px 0px 100px;
+        border-radius: 32px;
+    }
+    .burger-icon {
+        display: block;
+    }
+
+    .burger-toggle:checked ~ nav ul {
+        display: block;
+    }
+
+    .burger-toggle:checked ~ .burger-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-toggle:checked ~ .burger-icon span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-toggle:checked ~ .burger-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}

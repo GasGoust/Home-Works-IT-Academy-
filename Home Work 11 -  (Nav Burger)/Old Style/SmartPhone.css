@@ -1,0 +1,33 @@
+/* SmartPhone.css */
+@media (max-width: 650px) {
+    /* Вертикальное расположение элементов */
+    .row,
+    .row_2 {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Полная ширина для текстовых блоков и изображений */
+    article
+    aside
+    {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    /* Уменьшение изображений для мобилок */
+    .row img,
+    .row_2 img
+    {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 0 !important;
+    }
+
+    /* Отключение hover-эффектов */
+    .row:hover,
+    .row_2:hover {
+        transform: none !important;
+    }
+}
