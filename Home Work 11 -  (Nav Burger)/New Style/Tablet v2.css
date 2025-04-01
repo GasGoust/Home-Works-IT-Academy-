@@ -1,5 +1,9 @@
 /*Tablet v2*/
 @media (min-width: 600px) and (max-width: 850px) {
+    .star img
+    {
+        width: 80px;
+    }
     .row {
         max-width: 90%;
         padding: 30px 15px !important;
