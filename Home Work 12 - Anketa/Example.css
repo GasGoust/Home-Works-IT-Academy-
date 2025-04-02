@@ -1,0 +1,38 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+ body {
+  background-image: url(http://fr.playstation.com/media/5ZfqPjVF/BigSkyInfinity_Hero_EN.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+}
+#content{
+  border:3px solid #eb5353;
+  border-width:0 3px;
+  display:inline-block;
+  margin:50px 0;
+  width:100%;
+    background-color: black;
+}
+.divider {
+  font-size:30px;
+  margin: -0.65em auto -0.45em;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.2em;
+  color: #eb5353;
+}
+.divider:before,
+.divider:after {
+  content: "";
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 0.65em;
+  border-bottom: 3px solid #fff;
+  margin: 0 2% 0 -55%;
+}
+.divider:after {
+  margin: 0 -55% 0 2%;
+}
+p{margin: 150px 0;}
