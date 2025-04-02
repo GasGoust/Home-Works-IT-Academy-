@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>GET/POST</title>
+</head>
+<body>
+
+    <!-- Сверстать форму c методом get с полями action https://fe.it-academy.by/TestForm.php -->
+    <form class="form-container" method="get" action="https://fe.it-academy.by/TestForm.php">
+    
+    <!-- Скрытое поле -->
+    <input type="hidden" name="location" value="Belarus">
+    
+    <!-- Поле ИМЯ -->
+    <div class="form-group">
+        <label for="name" >Имя:</label>
+        <input type="text" id="name" name="name" maxlength="20" required>
+    <!--Выбор Имёт для массива данных при  выборе операции-->
+    <!--<select name="[]" multiple>-->
+        <label for="hobbi">Выбор хобби:</label>
+        <select name="hobbi[]" id="hobbi" multiple size="5">
+            <option value="PlayStation">PlayStation</option>
+            <option value="Read">Читать</option>
+            <option value="Write">Писать</option>
+            <option value="Photograph">Фотографировать</option>
+            <option value="Runing">Бег</option>
+            <option value="GYM">Бидибилдинг</option>
+        </select>
+        <small>
+            <br>Для выбора нескольких вариантов используйте:
+            <br>• Ctrl + клик (Windows/Linux)
+            <br>• Command + клик (Mac)
+        </small>
+        <button type="submit">Сохранить выбор</button>
+    </div>
+
+    <!-- Поле ВОЗРАСТ -->
+    <div class="form-group">
+        <label for="age">Возраст:</label>
+        <input type="text" id="age" name="age" maxlength="2" value="25" required>
+    </div>
+
+    <!-- Радиокнопки -->
+    <div class="form-group">
+        <label>Предпочтения:</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="preferences" value="book" checked> Книги
+            </label>
+            <label>
+                <input type="radio" name="preferences" value="film"> Фильмы
+            </label>
+        </div>
+    </div>
+
+    <!-- Чекбокс -->
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="agreement" value="yes" checked> Согласен с условиями
+        </label>
+    </div>
+
+    <!-- Кнопка отправки -->
+    <button type="submit">Отправить анкету</button>
+</form>
+</body>
+</html>
