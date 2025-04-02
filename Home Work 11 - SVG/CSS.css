@@ -1,0 +1,37 @@
+h2
+{
+    display: flex;
+    justify-content: center;
+}
+div
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*--SVG--*/
+svg:hover path:nth-of-type(1) {
+    fill: #00ff00 !important; 
+}
+
+/*--id--*/
+#IMalanka:hover {
+    fill: #ff9900 !important;
+    cursor: pointer;
+}
+
+  /*--d--*/
+  path:first-child:hover {
+    fill:#d3b8b8;
+    stroke: rgb(30, 171, 206);
+}
+
+/*Прозрачность*/
+#IMalanka:hover {
+    opacity: 0.7;
+}
+
+/*fill и stroke*/
+.hexagon {
+    transition: fill 0.3s, stroke 0.3s;
+}
