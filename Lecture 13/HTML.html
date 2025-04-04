@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Anketa</title>
+</head>
+<body>
+    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+    <!--from to:-->
+    <div class="group">
+        <div class="anketa">
+            <h1 class="line">Информация о вас:</h1>
+            <!--ФИО-->
+            <div class="pole">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" pattern="[A-Za-zА-Яа-яЁё\s]+" maxlength="20" required>
+            </div>
+            <!--Email-->
+            <div class="pole">
+                <label for="name">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите Email" maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                required>
+            </div>
+            <!--Возраст-->
+            <div class="pole">    
+                <label for="age">Ваш возраст:</label>
+                <input type="text" id="age" name="age" value="25" min="16" max="99" maxlength="20" required>
+            </div>
+        </div>    
+    </div>
+    <!--from to:-->
+    <div class="group">
+        <div class="anketa2">
+            <h1 class="line">Ваши предпочтения:</h1>
+            <h2 class="font">Предпочтения:</h2>
+                <!--Фильмы - Книги-->
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" style="accent-color: #e27e21;"  name="answer" value="1" checked>Книги
+                        <input type="radio" style="accent-color: #e27e21;" name="answer" value="2">Фильмы
+                    </label>
+                </div>
+                <br>
+            <!--Genre-->
+            <div class="form-group">
+                <!--Жанр-->
+                <label class="genre" for="genre">Выберите жанр:</label>
+                <select name="genre[]" id="genre" class="destony" required>
+                  <option value="">-- Жанр --</option>
+                  <option value="romance" selected>роман\мелодрама</option>
+                  <option value="comedy">приключения\комедия</option>
+                  <option value="historical">документальный\исторический</option>
+                  <option value="science-fiction">научная фантастика</option>
+                </select>
+                <!--Дата-->
+                <div class="Data" required>
+                    <label for="start">Start date:</label>
+                    <input type="date" id="start" name="trip-start" value="25-01-01" min="1900-01-01" max="2026-01-01" />
+                </div>
+                <!--comment-->
+                <div class="comm" required>
+                    <label class="lebelcomm" for="genre">Комментарии по предпочитаемым жанрам:</label><br>
+                    <textarea id="comment" name="comment" maxlength="100" placeholder="Я предпочитаю... " rows="3" cols="25"></textarea>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!--Согласие-->
+    <div class="footer" required>
+        <label for="Done">Даёте согласие для получения рассылки?</label>
+        <input type="checkbox" name="subscription" value="1">
+    </div>
+    <!--Согласие-->
+    <div class="buttons">
+    <button type="submit">
+        Отправить анкету ✅
+    </button>
+    <button type="reset">
+        Заполнить заново 🔄
+    </button>
+    </div>
+    </form> 
+</body>
+</html>
