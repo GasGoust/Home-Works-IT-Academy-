@@ -1,0 +1,145 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(250, 235, 215, 0.938);
+    display: flex;
+    justify-content: center;
+}
+.Stena
+{
+    margin: 100px;
+    width: 600px;
+    height: 700px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 32px;
+    box-shadow: 0px 0px 50px 10px red;
+}
+fieldset {
+    border-color: #717171;
+    border-radius: 32px;
+    display: block;
+    height: 25%;
+}
+input
+{
+    border-radius: 32px;
+}
+
+input {
+    transition: all 0.3s ease;
+    border-color: #a57262;
+}
+
+input:not(:placeholder-shown):invalid {
+    background-color: rgba(136, 238, 136, 0.466);
+    border-color: #62f43656;
+}
+
+.input_mail
+{
+    width: 100px;
+}
+.input_pass
+{
+    width: 100px;
+}
+legend
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+}
+label
+{
+    display: grid;
+}
+.Email_pass
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Email_pass input {
+    padding-left: 5px;
+    padding-right: 20px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+select
+{
+    width: 100%;
+    border-radius: 32px;
+    background-color: rgba(206, 183, 141, 0.466);
+}
+option[disabled] {
+    display: none;
+}
+.date
+{
+    padding-top: 10px;
+}
+.data
+{
+    width: 100%;
+}
+.watch
+{
+    width: 100%;
+}
+
+/* Time */
+/* Показываем время при валидной дате */
+#date:valid ~ #time-container {
+    display: block;
+    opacity: 1;
+} 
+/* Стили для скрытия */
+ #time-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.radio-group
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal label
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.skills
+{
+    margin-right: 55px;
+
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+button {
+    margin-top: 20px;
+    height: 40px;
+    width: 550px;
+    border-radius: 32px;
+    background-color: rgba(157, 157, 253, 0.596);
+    border: 1px;
+}
+button:hover {
+    margin-top: 20px;
+    height: 40px;
+    width: 550px;
+    border-radius: 32px;
+    background-color: rgba(202, 153, 112, 0.596);
+    border: 1px;
+    transition: all 0.3s ease-in;
+}

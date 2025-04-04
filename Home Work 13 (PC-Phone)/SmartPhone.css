@@ -1,0 +1,55 @@
+@media (max-width: 768px) {
+    .Stena {
+        margin: 20px;
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 15px;
+    }
+
+    .Email_pass {
+        flex-direction: column;
+    }
+
+    .Email_pass input {
+        margin-right: 0;
+        width: calc(100% - 25px);
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .radio-group span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .date-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #time-container {
+        order: 2;
+    }
+
+    .personal label {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    select {
+        width: 100%;
+    }
+}
