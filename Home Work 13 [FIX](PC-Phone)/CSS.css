@@ -1,0 +1,159 @@
+body
+{
+    /* белый фон, а все остальное пространство #f5f5f5*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+.Stena
+{
+    margin: 100px;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0px 0px 50px 10px red;
+}
+fieldset {
+    /* Цвет рамки для fieldset - #ddd */
+    border-color: #ddd;
+    border-radius: 32px;
+    display: block;
+    height: 25%;
+}
+input
+{
+    border-radius: 32px;
+}
+
+input {
+    /*поля подсвечены красной рамкой - #dc3545.*/
+    transition: all 0.3s ease;
+    border-color: #dc3545;
+    box-shadow: 0 0 5px #dc3545;
+}
+
+input:not(:placeholder-shown):invalid {
+    /* Валидные подсвечены синей рамкой
+    #007BFF с тенью 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); */
+    background-color: rgba(136, 238, 136, 0.466);
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.input_mail
+{
+    width: 100px;
+}
+.input_pass
+{
+    width: 100px;
+}
+legend
+{
+    /* Цвет текста для legend - #555 */
+    color: #555;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+}
+label
+{
+    /* Цвет для label  - #444 */
+    color: #444;
+    display: grid;
+}
+.Email_pass
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Email_pass input {
+    padding-left: 5px;
+    padding-right: 20px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+select
+{
+    width: 100%;
+    border-radius: 32px;
+    background-color: rgba(206, 183, 141, 0.466);
+}
+option[disabled] {
+    display: none;
+}
+.date
+{
+    padding-top: 10px;
+}
+.data
+{
+    width: 100%;
+}
+.watch
+{
+    width: 100%;
+}
+
+/* Time */
+/* Показываем время при валидной дате */
+#date:valid ~ #time-container {
+    display: block;
+    opacity: 1;
+} 
+/* Стили для скрытия */
+ #time-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.radio-group
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.radio-chek
+{
+    display: flex;
+}
+.personal label
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+button {
+    /* Цвет кнопки отправки - #007BFF */
+    margin-top: 20px;
+    height: 40px;
+    width: 550px;
+    border-radius: 32px;
+    background-color: #007BFF;
+    border: 1px;
+}
+button:hover {
+    /* а по наведению  - #0056b3 */
+    margin-top: 20px;
+    height: 40px;
+    width: 550px;
+    border-radius: 32px;
+    background-color: #0056b3;
+    border: 1px;
+    transition: all 0.3s ease-in;
+}
