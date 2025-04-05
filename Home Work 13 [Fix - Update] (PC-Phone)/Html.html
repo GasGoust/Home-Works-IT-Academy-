@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--PC-->
+    <link rel="stylesheet" href="CSS.css">
+    <!--Smartphone-->
+    <link rel="stylesheet" href="SmartPhone.css">
+    <title>Anketa</title>
+</head>
+<body>
+    <form method="get" action="https://fe.it-academy.by/TestForm.php">
+    <div class="Stena">
+        <h2>Регистрация на онлайн курс</h2>
+        <!--Личные данные-->
+        <fieldset>
+            <legend>Личные данные:</legend>
+            <!--FIO-->
+            <label for="name">Ф.И.О.*
+                <input type="text" id="name" name="name" 
+                       placeholder="Иванов Иван Иванович"
+                       pattern="[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+" 
+                       required>
+            </label><br>
+            <div class="Email_pass">
+                <!--Email-->
+                <label for="email">E.mail*
+                    <input class="input_mail" type="email" id="email" name="mail" placeholder="example@mail.com" required>
+                </label><br>
+                <!--Password-->
+                <label for="password">Password*
+                    <input class="input_pass" type="password" id="password" name="password" placeholder="Не менее 8 символов" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}" maxlength="8" required>
+                </label><br>
+            </div>
+        </fieldset><br>
+        <!--2 пункт-->
+        <fieldset>
+            <legend>Выбор курса:</legend>
+            <!--Курс-->
+            <label class="kurs" for="kurs">Курс*</label>
+                <select name="kurs[]" id="kurs" class="destony" required>
+                  <option value=""disabled selected hidden>Выберите курс:</option>
+                  <option value="WebDev">Веб-разработка</option>
+                  <option value="DataScience">Data Science</option>
+                  <option value="Graphics">Графический дизайн</option>
+                </select><br>
+            <!-- Контейнер Дата/Время -->
+            <div class="date-container">
+                <label for="date">Дата начала:</label>
+                <input class="data" type="date" id="date"name="date"min="2024-01-01"required>
+
+            <!-- Контейнер Время -->
+                <div id="time-container">
+                    <label for="time">Предпочитаемое время:</label>
+                    <input class="watch" type="time"  id="time" name="time" min="13:00" max="20:00" required>
+                </div>
+            </div>
+        </fieldset><br>
+        <!--3 пункт-->
+        <fieldset>
+            <legend>Дополнительно:</legend>
+            <!-- Дополнительно -->
+            <p>Опыт в IT:</p>
+            <div class="radio-group">
+                <div class="radio-chek"><span>Нет опыта</span><input class="check_skill" type="radio" name="experience" value="kid" required></div><br>
+                <div class="radio-chek"><span>Начинающий</span><input class="check_skill" type="radio" name="experience" value="beginner" required></div><br>
+                <div class="radio-chek"><span>Опытный</span><input class="check_skill" type="radio" name="experience" value="expert" required></div><br>
+            </div>
+            <div class="personal">
+                <label>Я согласен на обработку персональных данных*<input type="checkbox" required></label>
+            </div>    
+        </fieldset>
+        <!--Отправить заявку-->
+        <div class="buttons" required>
+            <button type="submit">
+                Отправить заявку
+            </button>
+        </div>
+    </form>
+</body>
+</html>
+
+<!--
+Серверному скрипту, который выполняет обработку формы, переданы следующие данные:
+
+Данные, полученные методом GET:
+Элемент формы: name, значение: Кичикулов Рустемгелди Бердимырадович
+Элемент формы: mail, значение: Kichikulov94@gmail.com
+Элемент формы: password, значение: qwert123
+Элемент формы: kurs, значение: массив DataScience
+Элемент формы: date, значение: 2025-05-25
+Элемент формы: time, значение: 13:32
+Элемент формы: experience, значение: expert
+
+Данные, полученные методом POST:
+Нет данных.-->
