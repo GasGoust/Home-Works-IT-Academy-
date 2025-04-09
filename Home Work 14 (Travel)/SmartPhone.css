@@ -4,7 +4,7 @@
     .travel {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, minmax(300px, 1fr));
-        padding: 5px;
+        padding: 0px;
         height: 0px;
         background: white;
         margin: -10px;
