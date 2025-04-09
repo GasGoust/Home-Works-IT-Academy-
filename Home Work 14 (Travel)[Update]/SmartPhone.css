@@ -21,25 +21,31 @@
     /*Spain*/
     .item1 {
         grid-row: 2 / 2;
+        box-sizing: border-box;
     }
 
     /*Bali*/
-    .item2 { grid-row: 1 / 1;}
+    .item2 { grid-row: 1 / 1;
+        box-sizing: border-box;}
 
     /*Czech*/
     .item3 {
-        grid-row: 3 / 3;}
+        grid-row: 3 / 3;
+        box-sizing: border-box;}
 
     /* Egypt */
     .item4 {
-        grid-row: 4 / 4;}
+        grid-row: 4 / 4;
+        box-sizing: border-box;}
 
     /* Turkey */
     .item5 {
-        grid-row: 5 / 5;}
+        grid-row: 5 / 5;
+        box-sizing: border-box;}
 
     /*Italy*/
     .item6 {
         grid-row: 6 / 7;
+        box-sizing: border-box;
         }
 }
