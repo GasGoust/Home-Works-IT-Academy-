@@ -1,0 +1,45 @@
+/*SmartPhone*/
+@media (max-width: 650px) {
+    
+    .travel {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, minmax(300px, 1fr));
+    }
+    div
+    {
+        align-items: center;
+        text-align: center;
+    }
+
+    .item {
+        grid-column: 1 / 2 !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+    }
+
+    /*Spain*/
+    .item1 {
+        grid-row: 2 / 2;
+    }
+
+    /*Bali*/
+    .item2 { grid-row: 1 / 1;}
+
+    /*Czech*/
+    .item3 {
+        grid-row: 3 / 3;}
+
+    /* Egypt */
+    .item4 {
+        grid-row: 4 / 4;}
+
+    /* Turkey */
+    .item5 {
+        grid-row: 5 / 5;}
+
+    /*Italy*/
+    .item6 {
+        grid-row: 6 / 7;
+        }
+}
