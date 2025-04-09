@@ -1,0 +1,94 @@
+/*SmartPhone*/
+@media (max-width: 414px) {
+    
+    .travel {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, minmax(300px, 1fr));
+        padding: 5px;
+        height: 0px;
+        background: white;
+        margin: -10px;
+    }
+
+    .item {
+        grid-column: 1 / 2 !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 2px 0 !important;
+    }
+
+    /*Spain*/
+    .item1 {
+        grid-row: 2 / 4;
+        position: relative;
+        height: 49% !important;
+        top: -151px;
+    }
+    .item1:hover {
+        grid-row: 2 / 4;
+        height: 49% !important;
+        position: relative;
+        top: -152px;
+    }
+
+    /*Bali*/
+    .item2 { grid-row: 1 / 2;}
+    .item2:hover {
+        grid-row: 1 / 2;
+        height: 98% ! important;
+        position: relative;
+        top: 0px;
+    }
+
+    /*Czech*/
+    .item3 {
+        grid-row: 4 / 5;
+        position: relative;
+        top: -303px;
+    }
+    .item3:hover {
+        grid-row: 4 / 5;
+        position: relative;
+        top: -303px;
+    }
+
+    /* Egypt */
+    .item4 {
+        grid-row: 5 / 6;
+        position: relative;
+        top: -303px;
+    }
+    .item4:hover {
+        grid-row: 5 / 6;
+        position: relative;
+        top: -303px;
+    }
+
+    /* Turkey */
+    .item5 {
+        grid-row: 6 / 7;
+        position: relative;
+        top: -303px;
+    }
+    .item5:hover {
+        grid-row: 6 / 7;
+        position: relative;
+        top: -303px;
+    }
+
+    /*Italy*/
+    .item6 {
+        grid-row: 7 / 8;
+        position: relative;
+        top: -303px;
+        height: 300px !important;    
+    }
+    .item6:hover {
+        grid-row: 7 / 8;
+        position: relative;
+        top: -303px;
+        height: 300px !important;    
+    }
+
+
+}

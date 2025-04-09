@@ -1,0 +1,180 @@
+/*PC*/
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.travel {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, minmax(300px, 1fr));
+    gap: 5px;
+    background: #bbbbbb;
+}
+
+/*Шрифт*/
+div {
+    text-align: center;
+    align-items: center;
+    color: rgb(12, 10, 72);
+}
+.item {
+    border: 1px solid #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Spain - первый столбец, все 3 строки */
+.item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-size: cover;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Spain.jpg');
+    height: 95%;
+    width: 95%;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.item1:hover {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    background-size: cover;
+    background-image:
+    url('Pic/Spain.jpg');
+    height: 100%;
+    box-sizing: border-box;
+    /**/
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    width: 96%;
+    position: relative;
+    left: 2px;
+}
+
+/* Bali - занимает 2 ячейки в первой строке */
+.item2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Bali.jpg');
+    width: 99%;
+    height: 85%;
+    box-sizing: border-box;
+}
+.item2:hover {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    background-image:
+    url('Pic/Bali.jpg');
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    height: 103%;
+    width: 97%;
+    position: relative;
+    left: 5px;
+    top: -5px;
+}
+
+/* Czech */
+.item3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Czech.jpg');
+    height: 100%;
+}
+.item3:hover {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: url(Pic/Czech.jpg);
+    height: 113%;
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: -1px;
+    left: -6px;
+}
+/* Egypt */
+.item4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Egypt.jpg');
+    height: 100%;
+    width: 98%;
+}
+.item4:hover {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url(Pic/Egypt.jpg);
+    height: 113%;
+    width: 96%;
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: -1px;
+    left: 6px;
+}
+/* Turkey */
+.item5 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Turkey.jpg');
+    height: 85%;
+}
+.item5:hover {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-image: url(Pic/Turkey.jpg);
+    height: 102%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+/* Italy */
+.item6 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url('Pic/Italy.jpg');
+    height: 85%;
+    width: 98%;
+}
+.item6:hover {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    background-image: url(Pic/Italy.jpg);
+    height: 102%;
+    width: 96%;
+    color: rgba(255, 255, 255, 0);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
