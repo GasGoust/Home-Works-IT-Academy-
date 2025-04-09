@@ -1,0 +1,34 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+div {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    align-items: center;
+    background-color: burlywood;
+}
+/* 12 табличик */
+.Block1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    grid-column-gap: 10px;
+    background-color: cadetblue;
+    border-style: dashed;
+}
+/* 4 таблички */
+.Block2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    grid-column-gap: 20px;
+    background-color: rgb(107, 95, 160);
+    border-style: dashed;
+}
