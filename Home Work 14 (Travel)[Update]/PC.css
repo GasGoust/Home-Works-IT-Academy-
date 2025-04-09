@@ -28,6 +28,7 @@ div {
 
 /* Spain - первый столбец, все 3 строки */
 .item1 {
+    box-sizing: border-box;
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
@@ -49,6 +50,7 @@ div {
 .item2 {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    box-sizing: border-box;
     background-image:
     linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
     url('Pic/Bali.jpg');
