@@ -1,5 +1,5 @@
 /*SmartPhone*/
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     
     .travel {
         grid-template-columns: 1fr;
