@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Определение четверти координатной плоскости</title>
+</head>
+<body>
+<script>
+    // Получаем координаты от пользователя
+    let x = parseFloat(prompt("Введите координату x:"));
+    let y = parseFloat(prompt("Введите координату y:"));
+    
+    // Проверка корректности ввода
+    if (isNaN(x) || isNaN(y)) {
+        alert("Ошибка! Введены некорректные координаты.");
+    } else {
+        let result;
+        
+        // Определяем четверть с помощью вложенных условий
+        if (x > 0) {
+            if (y > 0) {
+                result = "первой";
+            } else if (y < 0) {
+                result = "четвёртой";
+            } else {
+                result = "на оси Y";
+            }
+        } else if (x < 0) {
+            if (y > 0) {
+                result = "второй";
+            } else if (y < 0) {
+                result = "третьей";
+            } else {
+                result = "на оси Y";
+            }
+        } else {
+            result = "на оси X";
+        }
+
+        // Формируем окончательное сообщение
+        if (result.includes("оси")) {
+            alert(`Точка находится ${result}.`);
+        } else {
+            alert(`Точка находится в ${result} четверти.`);
+        }
+    }
+</script>
+</body>
+</html>
