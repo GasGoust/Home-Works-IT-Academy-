@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=UUJXTsNdDAE
+
+https://stackoverflow.com/questions/9224404/get-color-name-by-hex-or-rgb
+https://www.geeksforgeeks.org/how-to-convert-color-names-to-hexcode-using-javascript/
+
