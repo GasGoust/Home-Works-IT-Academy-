@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANKETA (тернарный оператор)</title>
+</head>
+<body>
+<script>
+let lastName = prompt('Введите фамилию:');
+let firstName = prompt('Введите имя:');
+let middleName = prompt('Введите отчество:');
+let age = parseInt(prompt('Введите возраст в годах:'));
+let isMale = confirm('Ваш пол - мужской?');
+
+let ageInDays = age * 365;
+let ageIn5Years = age + 5;
+let gender = isMale ? 'мужской' : 'женский';
+let pensionStatus = isMale 
+    ? (age >= 60 ? 'да' : 'нет')
+    : (age >= 55 ? 'да' : 'нет');
+
+alert(`ваше ФИО: ${lastName} ${firstName} ${middleName}
+ваш возраст в годах: ${age}
+ваш возраст в днях: ${ageInDays}
+через 5 лет вам будет: ${ageIn5Years}
+ваш пол: ${gender}
+вы на пенсии: ${pensionStatus}`);
+</script>
+</body>
+</html>
