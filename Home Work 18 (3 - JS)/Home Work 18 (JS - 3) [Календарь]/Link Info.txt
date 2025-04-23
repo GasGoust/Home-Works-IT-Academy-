@@ -1,0 +1,23 @@
+YT:
+https://www.youtube.com/watch?v=TdurrvcOHgQ
+https://www.youtube.com/watch?v=RPMGx4SOilE
+https://www.youtube.com/watch?v=5Ze5CYzv10Q
+https://www.youtube.com/watch?v=oXEI7nmWYiQ
+
+Math round (Расчет - округлить) - вывести на экран
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+
+throw new - как Alert
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
+
+Google расчет секунд, дней, годов:
+https://www.google.com/search?q=%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE+%D0%B2+%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%B5+%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4&oq=%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE+%D0%B2+%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%B5+%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCggFEAAYChgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEINjM5N2owajeoAgiwAgHxBQmkIKQdiDfF&sourceid=chrome&ie=UTF-8
+
+Конвертация
+https://metanit.com/web/javascript/2.4.php
+
+convertNumber(sec)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+https://medium.com/@harshitgambhir88/convert-hh-mm-ss-to-seconds-or-vice-versa-using-javascript-df96c23f1404
+https://www.geeksforgeeks.org/how-to-convert-seconds-to-time-string-format-hhmmss-using-javascript/?ref=asr26
+https://stackoverflow.com/questions/36098913/convert-seconds-to-days-hours-minutes-and-seconds
