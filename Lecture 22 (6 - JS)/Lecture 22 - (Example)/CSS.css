@@ -1,0 +1,51 @@
+body
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.box
+{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto auto;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    margin: 225px 10px 225px 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 32px;
+    align-items: center;
+    gap: 10px;
+}
+.darkTheme
+{
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+.whiteTheme
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.change
+{
+    background-color: tomato;
+    text-align: center;
+    color: black;
+}
+
+.dark
+{
+    background-color:black;
+}
+.white
+{
+    background-color:white;
+}

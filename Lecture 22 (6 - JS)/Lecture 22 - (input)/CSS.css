@@ -1,0 +1,42 @@
+body
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+
+/* Ч/Б */
+button
+{
+    padding: 10px 50px 10px 50px;
+    border-radius: 32px;
+}
+
+/* Темы */
+.dark {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.purple {
+    background-color: purple;
+}
+.orange {
+    background-color: orange;
+}
