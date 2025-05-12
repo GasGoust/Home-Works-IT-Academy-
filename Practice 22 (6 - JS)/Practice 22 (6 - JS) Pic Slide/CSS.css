@@ -1,0 +1,62 @@
+html,body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contaiber
+{
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgb(150, 150, 150);
+    border-radius: 30px;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.button-group
+{
+    text-align: center;
+    align-items: center;
+}
+
+button
+{
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+button:active
+{
+    background: black;
+    color: white;
+}
+
+/* practice */
+.slider
+{
+    width: 225px;
+    height: 225px;
+    /* чтобы смещать */
+    overflow: hidden;
+    margin: 20px auto;
+}
+.slider-line
+{
+    display: flex;
+    justify-content: center;
+    width: 1125px;
+    height: 225px;
+    /* чтобы смещать */
+    position: relative;
+    left: 0; /* для JS */
+    transition: all ease 1s; /*плавность анимации*/
+}

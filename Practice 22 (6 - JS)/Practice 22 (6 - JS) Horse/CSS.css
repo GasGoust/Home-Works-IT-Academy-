@@ -1,0 +1,32 @@
+body
+    {
+        background-color: blanchedalmond;
+    }
+
+.active {
+        border: 2px solid black;
+        background-color: rgb(140, 140, 239);
+        color: white;
+        padding: 10px;
+        box-shadow: 10px;
+        position: absolute;
+        top: 100px;
+        right: 30%;
+        left: 30%;    
+    }
+/* Не существующий класс для JS*/
+.box
+{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(80, 130, 130);
+    border-radius: 30px;
+    border: solid 2px white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 70px auto auto;
+    padding: 10px;
+    box-shadow: 10px 10px 10px 10px;
+}
