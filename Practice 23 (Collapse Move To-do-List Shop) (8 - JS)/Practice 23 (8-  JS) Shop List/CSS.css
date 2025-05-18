@@ -1,0 +1,20 @@
+/* Стили для таблицы */
+#shopList {
+    width: 300px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#shopList th, #shopList td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#shopList th {
+    background-color: burlywood;
+}
+
+#shopList tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
