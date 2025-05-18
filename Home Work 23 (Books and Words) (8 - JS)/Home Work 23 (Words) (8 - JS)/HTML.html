@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра в слова</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="JS.js">
+
+</head>
+<body>
+    <div id="game-container">
+        <h1>Игра в слова</h1>
+        
+        <div id="setup">
+            <p>Количество игроков:</p>
+            <button id="2players">2 игрока</button>
+            <button id="3players">3 игрока</button>
+            <button id="4players">4 игрока</button>
+        </div>
+        
+        <div id="game" style="display: none;">
+            <div id="players"></div>
+            <p>Текущий игрок: <span id="current-player"></span></p>
+            <p>Введите слово на букву: <span id="current-letter"></span></p>
+            <input type="text" id="field" placeholder="Введите слово...">
+            <div id="message"></div>
+            <div id="used-words">
+                <p>Использованные слова:</p>
+                <ul id="word-list"></ul>
+            </div>
+            <button id="restart">Начать заново</button>
+        </div>
+    </div>
+    <script src="JS.js"></script>
+</body>
+</html>

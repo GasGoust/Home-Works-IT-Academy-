@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="JS.js">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекомендации книг</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Рекомендация книги</h1>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="genre">Жанр:</label>
+                <select id="genre" required>
+                    <option value="" disabled selected>Выберите жанр</option>
+                    <option value="роман">Роман</option>
+                    <option value="комедия">Комедия</option>
+                    <option value="трагедия">Трагедия</option>
+                    <option value="драма">Драма</option>
+                    <option value="ужасы">Ужасы</option>
+                </select>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="modern">
+                <label for="modern">Современная литература</label>
+            </div>
+            
+            <div class="form-group checkbox">
+                <input type="checkbox" id="russian">
+                <label for="russian">Русский автор</label>
+            </div>
+            
+            <button type="submit">Получить рекомендацию</button>
+        </form>
+        
+        <div id="result" class="hidden">
+            <h2>Ваша предполагаемая рекомендация:</h2>
+            <p id="recommendation"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+    <script src="JS.js"></script>
+</body>
+</html>
