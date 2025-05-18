@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do List</title>
+</head>
+<body>
+  <style>
+    .container {
+      display: flex;
+    }
+    .flex-box {
+      flex-grow: 2;
+      margin-left: 20px;
+    }
+    .flex-box p {
+      font-size: 8px;
+      color:red;
+      margin: 0;
+    }
+
+  </style>
+  <div class="container">
+    <label>
+      Введите пункт сптска дел
+    </label>
+    <div class="flex-box">
+      <p class="error-message"></p>
+      <input type="text" id="input" >
+    </div>
+  </div>
+  <div>
+    <p>Список дел</p>
+    <ul></ul>
+  </div>
+  <script>
+    let input = document.getElementById('input');
+    let list = document.querySelector('ul');
+    console.log(input.value)
+
+    input.onkeydown = addElementToList;
+
+    function addElementToList(event) {
+      document.getElementsByClassName('error-message')[0].textContent = '';
+      console.log(event.key)
+      if (event.key == "Enter" && input.value != '') {
+        let li = document.createElement('li');
+        li.textContent = input.value;
+        list.appendChild(li);
+        input.value = '';
+      }
+      else if (event.key == "Enter" && input.value == '') {
+        document.getElementsByClassName('error-message')[0].textContent = "Вы ничего не ввели";
+      }
+    }
+
+  </script>
+</body>
+</html>
