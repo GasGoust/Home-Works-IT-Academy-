@@ -1,0 +1,12 @@
+https://github.com/GasGoust/Home-Works-IT-Academy-/tree/main/Home%20Work%2023%20(Words)%20(8%20-%20JS)%20(FIX)
+
+// было
+players[currentPlayerIndex].score++;
+currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+currentPlayerSpan.textContent = players[currentPlayerIndex].name;
+
+// стало
+players[currentPlayerIndex].score++;
+currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+currentPlayerSpan.textContent = players[currentPlayerIndex].name;
+renderPlayers();
