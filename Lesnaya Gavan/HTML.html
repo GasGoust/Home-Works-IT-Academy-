@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лесная Гавань - База отдыха на природе</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="JS.js">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Лесная Гавань</a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-menu">
+                <li><a href="#about">О базе</a></li>
+                <li><a href="#accommodation">Домики</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#fishing">Рыбалка</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#booking">Бронирование</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Отдых в гармонии с природой</h1>
+            <p>Уютные домики, свежий воздух и незабываемая рыбалка на берегу чистого озера</p>
+            <a href="#booking" class="btn">Забронировать сейчас</a>
+            
+            <div class="booking-widget">
+                <h3>Проверить доступность</h3>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="check-in">Заезд</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div class="form-group">
+                        <label for="check-out">Выезд</label>
+                        <input type="date" id="check-out">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Гости</label>
+                        <select id="guests">
+                            <option>1 взрослый</option>
+                            <option>2 взрослых</option>
+                            <option>2 взрослых + 1 ребенок</option>
+                            <option>2 взрослых + 2 ребенка</option>
+                            <option>Большая компания</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button type="submit" class="btn">Найти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">О нашей базе отдыха</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>База отдыха "Лесная Гавань" расположена в живописном месте на берегу чистого озера, окруженного вековым лесом. Мы создали место, где вы можете отдохнуть от городской суеты и насладиться природой в комфортных условиях.</p>
+                    <p>Наша история началась 15 лет назад, когда мы, семья Ивановых, решили создать место для отдыха, которое бы объединяло уют домашнего очага и красоту русской природы. С тех пор мы постоянно развиваемся, стараясь сделать ваш отдых максимально комфортным и запоминающимся.</p>
+                    <p>Мы предлагаем уютные деревянные домики с современными удобствами, русскую баню на дровах, организацию рыбалки и множество развлечений на природе для взрослых и детей.</p>
+                    <a href="#gallery" class="btn btn-outline">Смотреть фото</a>
+                </div>
+                <div class="about-image">
+                    <img src="image/Baza_otdyha.png" alt="Вид на базу отдыха">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" style="background-color: #f8f8f8;">
+        <div class="container">
+            <h2 class="section-title">Наши домики</h2>
+            <div class="accommodation-grid">
+                <!-- Домик 1 -->
+                <div class="room-card" data-room="1">
+                    <div class="room-image">
+                        <img src="image/Green_House.png" alt="Эконом домик">
+                    </div>
+                    <div class="room-details">
+                        <h3>Эконом</h3>
+                        <p>Небольшой уютный домик для 2-х человек с минимальными удобствами</p>
+                        <div class="room-price">от 1 500 руб./ночь</div>
+                        <a href="#" class="btn btn-outline room-details-btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Домик 2 -->
+                <div class="room-card" data-room="2">
+                    <div class="room-image">
+                        <img src="image/Standart_House.png" alt="Стандарт домик">
+                    </div>
+                    <div class="room-details">
+                        <h3>Стандарт</h3>
+                        <p>Комфортабельный домик для семьи из 3-4 человек со всеми удобствами</p>
+                        <div class="room-price">от 2 500 руб./ночь</div>
+                        <a href="#" class="btn btn-outline room-details-btn">Подробнее</a>
+                    </div>
+                </div>
+                
+                <!-- Домик 3 -->
+                <div class="room-card" data-room="3">
+                    <div class="room-image">
+                        <img src="image/Wood_House.png" alt="Люкс домик">
+                    </div>
+                    <div class="room-details">
+                        <h3>Люкс</h3>
+                        <p>Просторный домик с камином и террасой для максимально комфортного отдыха</p>
+                        <div class="room-price">от 4 000 руб./ночь</div>
+                        <a href="#" class="btn btn-outline room-details-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для деталей номера -->
+    <div class="modal" id="room-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Контент будет загружаться динамически -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3>Питание</h3>
+                    <p>Вкусная домашняя кухня из экологически чистых продуктов</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧖</div>
+                    <h3>Русская баня</h3>
+                    <p>Настоящая баня на дровах с вениками и чаепитием</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎣</div>
+                    <h3>Рыбалка</h3>
+                    <p>Аренда снастей, лодок и организация рыбалки с гидом</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚴</div>
+                    <h3>Активный отдых</h3>
+                    <p>Велосипеды, лыжи, катание на лодках и многое другое</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fishing Section -->
+    <section id="fishing" class="fishing-section">
+        <div class="container">
+            <h2 class="section-title">Рыбалка</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Наше озеро богато разнообразной рыбой: щука, окунь, плотва, лещ, карась. Для гостей базы мы предлагаем:</p>
+                    <ul style="margin-left: 20px; margin-bottom: 20px;">
+                        <li>Аренду рыболовных снастей</li>
+                        <li>Лодки и катамараны</li>
+                        <li>Услуги опытного гида-рыболова</li>
+                        <li>Подготовку места для рыбалки</li>
+                        <li>Обработку и приготовление улова</li>
+                    </ul>
+                    <p>Для опытных рыбаков мы можем организовать выездную рыбалку на близлежащие водоемы с более богатым уловом.</p>
+                    <a href="#contacts" class="btn">Узнать подробности</a>
+                </div>
+                <div class="about-image">
+                    <img src="image/Fishing.jpg" alt="Рыбалка на базе">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="image/Peoples.png" alt="Домик у озера">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/Star_Sky.png" alt="Отдых на природе">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/Snow_Hills.png" alt="Горный пейзаж">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/Baza_otdyha.png" alt="Горные вершины">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/Green_Woods.png" alt="Лес">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="image/Lake.png" alt="Озеро в лесу">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="background-color: #f8f8f8;">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших гостей</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-text">
+                        <p>Отдыхали семьей с двумя детьми. Остались очень довольны! Дети в восторге от рыбалки и прогулок на природе. Домик чистый, уютный, со всеми удобствами. Обязательно приедем еще!</p>
+                    </div>
+                    <div class="testimonial-author">Семья Орловых, Москва</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>Великолепное место для уединенного отдыха. Приезжали с женой на годовщину свадьбы. Особенно понравилась баня и веранда с видом на озеро. Персонал внимательный, но ненавязчивый.</p>
+                    </div>
+                    <div class="testimonial-author">Дмитрий и Елена, Санкт-Петербург</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>Как заядлый рыбак, могу оценить отличную организацию рыбалки. Гид Александр показал лучшие места, снасти качественные. Поймал щуку на 5 кг! Остался очень доволен.</p>
+                    </div>
+                    <div class="testimonial-author">Игорь, Нижний Новгород</div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Как добраться до базы отдыха? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Наша база расположена в 150 км от Москвы по Новорижскому шоссе. После поворота на Волоколамск ехать еще 25 км по указателям. Также мы можем организовать трансфер от станции железной дороги (оговаривается заранее).</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Что нужно взять с собой? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Рекомендуем взять удобную одежду и обувь для прогулок, купальные принадлежности, головные уборы от солнца. Если планируете рыбалку - можно взять свои снасти, хотя мы предоставляем все необходимое в аренду.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Можно ли с животными? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Да, мы разрешаем размещение с животными в некоторых категориях домиков за дополнительную плату (500 руб./сутки). Просьба уточнять при бронировании.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Есть ли Wi-Fi на территории? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Wi-Fi доступен в центральной зоне возле административного корпуса. В домиках подключение может быть неустойчивым из-за особенностей локации в лесной зоне.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Как отменить или перенести бронь? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>Отмена бронирования возможна не менее чем за 7 дней до заезда с возвратом 100% предоплаты. При отмене за 3-7 дней возвращается 50% суммы. При отмене менее чем за 3 дня предоплата не возвращается, но может быть перенесена на другие даты в течение года.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" style="background-color: #2c5e1a; color: white;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Контакты</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы всегда рады ответить на ваши вопросы и помочь с бронированием.</p>
+                    <ul class="footer-contact">
+                        <li><i>📞</i> +7 (495) 123-45-67</li>
+                        <li><i>📧</i> info@lesnaya-gavan.ru</li>
+                        <li><i>📍</i> Московская область, Волоколамский район, д. Орехово</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>VK</span></a>
+                        <a href="#"><span>YT</span></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a5f19a9d7d60b7d228a8a9876c0b3f7d7e7c7d7e7c7d7e7c7d7e7c7d7e7c7d7&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно для галереи -->
+    <div class="gallery-modal" id="gallery-modal">
+        <button class="close-gallery-modal">&times;</button>
+        <div class="gallery-modal-content">
+            <img class="gallery-modal-img" src="" alt="">
+            <div class="gallery-modal-caption"></div>
+            <button class="gallery-modal-prev">&#10094;</button>
+            <button class="gallery-modal-next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Лесная Гавань</h3>
+                    <p>База отдыха на берегу чистого озера в окружении векового леса. Идеальное место для отдыха от городской суеты.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#about">О базе</a></li>
+                        <li><a href="#accommodation">Домики</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#fishing">Рыбалка</a></li>
+                        <li><a href="#booking">Бронирование</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul class="footer-contact">
+                        <li><i>📞</i> +7 (495) 123-45-67</li>
+                        <li><i>📧</i> info@lesnaya-gavan.ru</li>
+                        <li><i>📍</i> Московская область, Волоколамский район</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 База отдыха "Лесная Гавань". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS.js"></script>
+</body>
+</html>
